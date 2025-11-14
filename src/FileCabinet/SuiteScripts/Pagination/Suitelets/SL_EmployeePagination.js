@@ -70,7 +70,7 @@ function (ui, search, runtime, redirect, url) {
                 });
 
                 if (currentPage > totalPages) currentPage = totalPages;
-                if (currentPage < 1)  currentPage = 1;
+                if (currentPage < 1) currentPage = 1;
 
                 var pageRange = pagedData.pageRanges[currentPage - 1];
                 var page = pagedData.fetch({ index: pageRange.index });
