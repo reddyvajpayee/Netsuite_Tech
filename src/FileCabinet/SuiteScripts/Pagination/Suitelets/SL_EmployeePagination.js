@@ -75,7 +75,7 @@ function (ui, search, runtime, redirect, url) {
                 var pageRange = pagedData.pageRanges[currentPage - 1];
                 var page = pagedData.fetch({ index: pageRange.index });
 
-                // 🔹 Build safe URLs for navigation
+                //Build safe URLs for navigation
                 var baseUrl = url.resolveScript({
                     scriptId: 'customscript_sl_employeepagination',
                     deploymentId: 'customdeploy_sl_employeepagination'
