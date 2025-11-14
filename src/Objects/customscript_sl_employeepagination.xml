@@ -1,0 +1,56 @@
+<suitelet scriptid="customscript_sl_employeepagination">
+  <description>Suitelet to Display Employee Records with Pagination using runPaged()</description>
+  <isinactive>F</isinactive>
+  <name>SLT Employee Pagination Demo</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/Pagination/Suitelets/SL_EmployeePagination.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_page_size">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue>50</defaultvalue>
+      <description>Defines how many employee records are displayed per page</description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>INTEGER</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Page Size</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_sl_employeepagination">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <custscript_page_size>50</custscript_page_size>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>Employee Pagination Demo</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>
