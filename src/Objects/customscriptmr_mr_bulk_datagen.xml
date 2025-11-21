@@ -1,0 +1,29 @@
+<mapreducescript scriptid="customscriptmr_mr_bulk_datagen">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Bulk Data Generator – Map/Reduce</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/Map Reduce Hard Limits/mr_bulk_datagen.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_mr_bulk_datagen">
+      <buffersize>64</buffersize>
+      <concurrencylimit>2</concurrencylimit>
+      <isdeployed>T</isdeployed>
+      <loglevel>AUDIT</loglevel>
+      <queueallstagesatonce>T</queueallstagesatonce>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>NOTSCHEDULED</status>
+      <title>Bulk Data Generator MR Deployment</title>
+      <yieldaftermins>60</yieldaftermins>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2025-11-19</startdate>
+          <starttime>23:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>
