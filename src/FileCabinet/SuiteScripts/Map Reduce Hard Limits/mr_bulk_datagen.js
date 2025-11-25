@@ -120,7 +120,7 @@ define(['N/record'], function(record) {
             let allValues = context.values;
             // Create the custom record
             const rec = record.create({
-                type: 'customrecord3144',
+                type: 'customrecord_persisted_data_record',
                 isDynamic: true
             });
 
